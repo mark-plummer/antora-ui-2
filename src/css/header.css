@@ -40,7 +40,7 @@ body {
 
   .navbar-end > a.navbar-item:hover,
   .navbar-end .navbar-link:hover {
-    background: var(--navbar_hover-background);
+    background: var(--white);
     color: var(--navbar-font-color);
   }
 
@@ -53,6 +53,32 @@ body {
     color: var(--navbar-font-color);
   }
 }
+
+/* cb styles */
+
+.navbar-dropdown .cols {
+  display: flex;
+}
+
+.navbar-dropdown .cols ul + ul {
+  border-left: 3px solid #151514;
+}
+
+.navbar-dropdown.versions li {
+  padding-right: 1.25rem; /* FIXME make this stretch to size of parent */
+}
+
+.navbar-dropdown li.current {
+  font-weight: var(--weight-medium);
+}
+
+.navbar-dropdown li.current a.navbar-item::before {
+  content: "\2023";
+  position: absolute;
+  left: 0.95em;
+}
+
+/* end cb styles */
 
 .navbar-brand {
   align-items: stretch;
@@ -148,6 +174,12 @@ body {
 .navbar-dropdown .navbar-item {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.navbar-dropdown ul {
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
 }
 
 .navbar-divider {

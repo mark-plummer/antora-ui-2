@@ -16,6 +16,32 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
++++<H4><span class="badge badge-primary">New</span></H4>+++
+
++++
+<button data-tippy-content="Me first!">Default</button>
+<button data-tippy-content="hello, my name is inigo montoya. You killed my father. Prepare to die.">I have my own content</button>
+<button data-tippy-arrow="true">I have my own option</button>
+<button
+  data-tippy-duration="0"
+  data-tippy-arrow="false"
+  data-tippy-delay="[1000, 200]"
+>
+  Text
+</button>
+<a href="#" data-tippy-content="Hey! I'm a link!">link</a>
++++
+
++++
+<a href="#" title="The place where an IT ops person can make changes to various settings.">admin console</a>
++++
+
++++
+<div class="tooltip">Admin Console
+  <span class="tooltiptext">You're hovering! Great job! Go here for complete details</span>
+</div>
++++
+
 == Cu solet
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.
@@ -215,6 +241,8 @@ Ex nam suas nemore dignissim, vel apeirian democritum et.
 image::multirepo-ssg.svg[Multirepo SSG,250]
 
 Make the switch today!
+
+Click `*here*`
 
 [#english+中文]
 == English + 中文

@@ -73,7 +73,7 @@ module.exports = (src, dest, preview) => () => {
               })
               .bundle((bundleError, bundleBuffer) =>
                 Promise.all(mtimePromises).then((mtimes) => {
-                  const newestMtime = mtimes.reduce((max, curr) => (!max || curr > max ? curr : max))
+                  const newestMtime = mtimes.reduce((max, curr) => (curr > max ? curr : max), file.stat.mtime)
                   if (newestMtime > file.stat.mtime) file.stat.mtimeMs = +(file.stat.mtime = newestMtime)
                   file.contents = bundleBuffer
                   file.path = file.path.slice(0, file.path.length - 10) + '.js'
@@ -90,6 +90,16 @@ module.exports = (src, dest, preview) => () => {
       )
       .pipe(buffer())
       .pipe(uglify()),
+    vfs.src(require.resolve('jquery/dist/jquery.min.js'), opts).pipe(concat('js/vendor/jquery.js')),
+    vfs.src(require.resolve('bootstrap/dist/js/bootstrap.min.js'), opts).pipe(concat('js/vendor/bootstrap.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/tab.js'), opts).pipe(concat('js/vendor/tab.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/popover.js'), opts).pipe(concat('js/vendor/popover.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/tooltip.js'), opts).pipe(concat('js/vendor/tooltip.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/button.js'), opts).pipe(concat('js/vendor/button.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/dropdown.js'), opts).pipe(concat('js/vendor/dropdown.js')),
+    vfs.src(require.resolve('tippy.js/dist/tippy.umd.min.js'), opts).pipe(concat('js/vendor/tippy.js')),
+    vfs.src(require.resolve('popper.js/dist/popper.min.js'), opts).pipe(concat('js/vendor/popper.js')),
+    vfs.src(require.resolve('docsearch.js/dist/cdn/docsearch.min.js'), opts).pipe(concat('js/vendor/docsearch.min.js')),
     vfs
       .src('css/site.css', { ...opts, sourcemaps })
       .pipe(postcss((file) => ({ plugins: postcssPlugins, options: { file } }))),

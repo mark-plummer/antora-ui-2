@@ -1,4 +1,45 @@
 <footer class="footer">
-  <p>This page was built using the Antora default UI.</p>
-  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+  <div class="container">
+    <div class="footer-links">
+      <div class="col">
+        <ul>
+          <li><a href="https://training.thoughtspot.com/" target="_blank" rel="noopener">Training</a></li>
+          <li><a href="https://community.thoughtspot.com/" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="https://www.thoughtspot.com/" target="_blank" rel="noopener">ThoughtSpot.com</a></li>
+      </div>
+    </div>
+    <div class="footer-terms">
+      <span>&copy;{{{year}}} ThoughtSpot, Inc. All rights reserved.</span>
+      <a href="https://www.thoughtspot.com/privacy-policy">Privacy Statement</a>
+      <a href="https://www.thoughtspot.com/support">Support</a>
+      <a href="https://www.thoughtspot.com/thoughtspot-website-terms-use">Terms of Use</a>
+    </div>
+  </div>
 </footer>
+{{#if env.ALGOLIA_API_KEY}}
+<script src="{{uiRootPath}}/js/vendor/docsearch.min.js"></script>
+<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
+<script>
+var search = docsearch({
+  {{#with env.ALGOLIA_APP_ID}}
+  appId: '{{this}}',
+  {{/with}}
+  apiKey: '{{env.ALGOLIA_API_KEY}}',
+  indexName: '{{env.ALGOLIA_IDX_NAME}}',
+  inputSelector: '#search-input',
+  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
+  algoliaOptions: { hitsPerPage: 10 }
+}).autocomplete
+search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
+function focusSearchInput () { document.querySelector('#search-input').focus() }
+if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
+</script>
+{{#if page.home}}
+<script>
+window.addEventListener('load', function focusSearchInput () {
+  window.removeEventListener('load', focusSearchInput)
+  document.querySelector('#search-input').focus()
+})
+</script>
+{{/if}}
+{{/if}}
