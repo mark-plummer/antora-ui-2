@@ -1,6 +1,5 @@
 <main class="article"  data-ceiling="topbar">
-  <!--couchbase latest logic start -->
-  {{#unless (or page.attributes.hide-view-latest (eq page.componentVersion page.component.latest))}}
+  <!-- {{#unless (or page.attributes.hide-view-latest (eq page.componentVersion page.component.latest))}}
   <div class="article-banner">
     {{#if page.componentVersion.prerelease}}
     <p>You are viewing the documentation for a prerelease version.</p>
@@ -10,9 +9,8 @@
     <a class="btn" href="{{ifelse (eq env.SUPPORTS_CURRENT_URL 'true') (relativize (current-url page.url)) (relativize page.latest.url)}}">View Latest</a>
   </div>
   {{/unless}}
-  <div class="article-header">
-<!--{{> nav-control}} -->
-<!-- couchbase latest logic end -->
+  <div class="article-header"> -->
+<!-- {{> nav-control}} -->
 {{> toolbar}}
   <div class="content">
 {{> article}}
