@@ -34,7 +34,7 @@
 .article-banner {
   align-items: center;
   background: linear-gradient(to left, #fff, #333  50%);
-  color: #0000ff;
+  color: #00ff;
   display: flex;
   line-height: 1.2;
   margin: calc(-1 * var(--height-spacer)) calc(-1 * var(--width-container-gutter)) var(--height-spacer);
@@ -47,7 +47,7 @@
 }
 
 .article-banner a.btn {
-  color: #4e55fd ;
+  color: #4e55fd;
   border: 1px solid #4e55fd;
   display: block;
   font-weight: var(--weight-bold);
