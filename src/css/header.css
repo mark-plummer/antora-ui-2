@@ -68,6 +68,16 @@ body {
   padding-right: 1.25rem; /* FIXME make this stretch to size of parent */
 }
 
+.navbar-dropdown li.current {
+  font-weight: var(--weight-medium);
+}
+
+.navbar-dropdown li.current a.navbar-item::before {
+  content: "\2023";
+  position: absolute;
+  left: -0.75em;
+}
+
 /* end cb styles */
 
 .navbar-brand {
