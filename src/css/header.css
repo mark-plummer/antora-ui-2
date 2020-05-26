@@ -75,7 +75,7 @@ body {
 .navbar-dropdown li.current a.navbar-item::before {
   content: "\2023";
   position: absolute;
-  left: -0.75em;
+  left: 0.95em;
 }
 
 /* end cb styles */
