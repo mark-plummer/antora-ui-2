@@ -58,12 +58,10 @@ body {
 
 .navbar-dropdown .cols {
   display: flex;
-
 }
 
 .navbar-dropdown .cols ul + ul {
   border-left: 3px solid #151514;
-
 }
 
 .navbar-dropdown.versions li {
