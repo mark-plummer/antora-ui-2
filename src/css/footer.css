@@ -245,7 +245,9 @@
   }
 
   .footer-links {
-    padding-top: 2rem;
+    padding: 2.125rem 0 0.3125rem;
+    max-width: 71.25rem;
+    margin: 0 auto;
   }
 
   .footer-links .col {
