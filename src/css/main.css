@@ -66,3 +66,7 @@
   color: var(#4e55fd);
 }
 /* couchbase banner css end */
+main.home {
+  padding-right: var(--width-container-gutter);
+  padding-left: var(--width-container-gutter);
+}
