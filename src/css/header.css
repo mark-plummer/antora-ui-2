@@ -40,7 +40,7 @@ body {
 
   .navbar-end > a.navbar-item:hover,
   .navbar-end .navbar-link:hover {
-    background: var(--navbar_hover-background);
+    background: var(--white);
     color: var(--navbar-font-color);
   }
 

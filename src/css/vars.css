@@ -23,7 +23,7 @@
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
+  --body-font-family: "acumin-pro", sans-serif;
   --body-font-weight-bold: 500;
   --monospace-font-family: "Roboto Mono", monospace;
   --monospace-font-weight-bold: 500;
@@ -36,7 +36,7 @@
   /* navbar */
   --navbar-background: #4e55fd;
   --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
+  --navbar_hover-background: #4e55fd;
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
