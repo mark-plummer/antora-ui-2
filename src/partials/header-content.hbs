@@ -33,16 +33,16 @@
         {{else}}
         <a class="navbar-item component" href="{{relativize page.componentVersion.url}}"><span class="title">{{{page.component.title}}}</span>{{#unless (eq page.componentVersion.displayVersion 'master')}} <span class="version">{{page.componentVersion.displayVersion}}</span>{{/unless}}</a>
       {{/if}}
-        <!-- <a class="navbar-item" href="#">Home</a>
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <!-- <a class="navbar-item" href="#">Home</a> -->
+<div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link" href="#">Products</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="#">Cloud</a>
-            <a class="navbar-item" href="#">Software</a>
+            <a class="navbar-item.is-active" href="https://antora-software.netlify.app/">Software</a>
             <a class="navbar-item" href="#">Mobile</a>
           </div>
         </div>
-        <div class="navbar-item has-dropdown is-hoverable">
+      <!--  <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Services</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="#">Service A</a>
@@ -56,12 +56,12 @@
             <a class="navbar-item" href="#">Resource A</a>
             <a class="navbar-item" href="#">Resource B</a>
             <a class="navbar-item" href="#">Resource C</a>
-          </div>
-        </div> -->
-<div class="navbar-item">
+          </div> -->
+        </div>
+<!-- <div class="navbar-item">
           <span class="control">
           <a class="button is-primary" href="https://antora-software.netlify.app/">Software</a>
-</span>
+</span>  -->
         </div>
       </div>
     </div>
