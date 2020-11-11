@@ -16,6 +16,8 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
++++<H4><span class="badge badge-primary">New</span></H4>+++
+
 == Cu solet
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.
