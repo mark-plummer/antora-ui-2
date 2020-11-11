@@ -18,6 +18,23 @@ Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
 +++<H4><span class="badge badge-primary">New</span></H4>+++
 
++++
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
++++
+
 == Cu solet
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.
