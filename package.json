@@ -57,7 +57,11 @@
     "vinyl-fs": "~3.0"
   },
   "dependencies": {
+    "bl": "^4.0.3",
     "bootstrap": "^4.5.3",
-    "typeface-open-sans": "^1.1.13"
+    "elliptic": "^6.5.3",
+    "lodash": "^4.17.20",
+    "typeface-open-sans": "^1.1.13",
+    "websocket-extensions": "^0.1.4"
   }
 }
