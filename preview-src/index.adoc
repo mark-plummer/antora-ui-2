@@ -19,20 +19,16 @@ Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 +++<H4><span class="badge badge-primary">New</span></H4>+++
 
 +++
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+<button>Default</button>
+<button data-tippy-content="hello">I have my own content</button>
+<button data-tippy-arrow="true">I have my own option</button>
+<button
+  data-tippy-duration="0"
+  data-tippy-arrow="false"
+  data-tippy-delay="[1000, 200]"
+>
+  Text
+</button>
 +++
 
 == Cu solet

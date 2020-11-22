@@ -92,6 +92,13 @@ module.exports = (src, dest, preview) => () => {
       .pipe(uglify()),
     vfs.src(require.resolve('jquery/dist/jquery.min.js'), opts).pipe(concat('js/vendor/jquery.js')),
     vfs.src(require.resolve('bootstrap/dist/js/bootstrap.min.js'), opts).pipe(concat('js/vendor/bootstrap.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/tab.js'), opts).pipe(concat('js/vendor/tab.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/popover.js'), opts).pipe(concat('js/vendor/popover.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/tooltip.js'), opts).pipe(concat('js/vendor/tooltip.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/button.js'), opts).pipe(concat('js/vendor/button.js')),
+    vfs.src(require.resolve('bootstrap/js/dist/dropdown.js'), opts).pipe(concat('js/vendor/dropdown.js')),
+    vfs.src(require.resolve('tippy.js/dist/tippy.umd.min.js'), opts).pipe(concat('js/vendor/tippy.js')),
+    vfs.src(require.resolve('popper.js/dist/popper.min.js'), opts).pipe(concat('js/vendor/tippy.js')),
     vfs
       .src('css/site.css', { ...opts, sourcemaps })
       .pipe(postcss((file) => ({ plugins: postcssPlugins, options: { file } }))),
