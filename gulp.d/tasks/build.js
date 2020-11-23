@@ -98,7 +98,7 @@ module.exports = (src, dest, preview) => () => {
     vfs.src(require.resolve('bootstrap/js/dist/button.js'), opts).pipe(concat('js/vendor/button.js')),
     vfs.src(require.resolve('bootstrap/js/dist/dropdown.js'), opts).pipe(concat('js/vendor/dropdown.js')),
     vfs.src(require.resolve('tippy.js/dist/tippy.umd.min.js'), opts).pipe(concat('js/vendor/tippy.js')),
-    vfs.src(require.resolve('popper.js/dist/popper.min.js'), opts).pipe(concat('js/vendor/tippy.js')),
+    vfs.src(require.resolve('popper.js/dist/popper.min.js'), opts).pipe(concat('js/vendor/popper.js')),
     vfs
       .src('css/site.css', { ...opts, sourcemaps })
       .pipe(postcss((file) => ({ plugins: postcssPlugins, options: { file } }))),
