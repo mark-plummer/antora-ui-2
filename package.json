@@ -66,7 +66,7 @@
     "lodash": "^4.17.20",
     "popper.js": "^1.16.1",
     "tippy.js": "^6.2.7",
-    "typeface-open-sans": "^1.1.13",
-    "websocket-extensions": "^0.1.4"
+    "websocket-extensions": "^0.1.4",
+    "docsearch.min.js": "^2.5.2"
   }
 }
