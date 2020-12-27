@@ -38,7 +38,7 @@ body {
     color: var(--navbar-font-color);
   }
 
-/* Is this hover color really intended to be different from --navbar-hover-background? */
+  /* Is this hover color really intended to be different from --navbar-hover-background? */
 
   .navbar-end > a.navbar-item:hover,
   .navbar-end .navbar-link:hover {
