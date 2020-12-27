@@ -14,6 +14,10 @@
 @import "footer.css";
 @import "highlight.css";
 @import "print.css";
+@import "bootstrap-badges.css";
+@import "bootstrap-navtabs.css";
+@import "tippy.css";
+@import "tooltip.css";
 @import "home.css";
 @import "site-extra.css";
 @import "docsearch.css"
