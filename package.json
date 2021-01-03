@@ -1,14 +1,14 @@
 {
-  "name": "antora-ui-default",
-  "description": "An archetype project that produces a UI for creating documentation sites with Antora",
-  "homepage": "https://gitlab.com/antora/antora-ui-default",
+  "name": "thoughtspot-ui-bundle",
+  "description": "Antora UI bundle for Thoughtspot",
+  "homepage": "https://github.com/mark-plummer/antora-ui2",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/antora/antora-ui-default.git"
+    "url": "https://github.com/mark-plummer/antora-ui2.git"
   },
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">= 10.0.0"
   },
   "browserslist": [
     "last 2 versions"
