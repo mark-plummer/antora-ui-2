@@ -13,6 +13,8 @@
 @import "page-versions.css";
 @import "toc.css";
 @import "doc.css";
+@import "tabset.css";
+@import "pagination.css";
 @import "header.css";
 @import "header-cb.css";
 /* @import "footer.css"; */
@@ -25,4 +27,4 @@
 @import "tooltip.css";
 @import "home.css";
 @import "site-extra.css";
-@import "docsearch.css"
+/* @import "docsearch.css"; */
