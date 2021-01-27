@@ -1,11 +1,11 @@
 {
   "name": "thoughtspot-ui-bundle",
   "description": "Antora UI bundle for Thoughtspot",
-  "homepage": "https://github.com/mark-plummer/antora-ui2",
+  "homepage": "https://github.com/mark-plummer/antora-ui-2",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mark-plummer/antora-ui2.git"
+    "url": "https://github.com/mark-plummer/antora-ui-2.git"
   },
   "engines": {
     "node": ">= 10.0.0"
