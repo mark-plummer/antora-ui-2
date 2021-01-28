@@ -96,31 +96,37 @@
 .home .card {
   color: #fff;
   display: flex;
-  flex: 1 0 auto;
-  flex-direction: column;
+/*  flex: 1 0 auto; */
+/*  flex-direction: column; */
   margin: 0.75rem 0 0 0.75rem;
   min-width: 0;
   padding: 1.25rem;
+  border-radius: 9px;
 }
 
 .home .card:nth-of-type(1) {
   background-color: var(--color-brand-pink);
+  border-radius: 9px;
 }
 
 .home .card:nth-of-type(2) {
   background-color: var(--color-brand-green);
+  border-radius: 9px;
 }
 
 .home .card:nth-of-type(3) {
   background-color: var(--color-brand-light-blue);
+  border-radius: 9px;
 }
 
 .home .card:nth-of-type(4) {
   background-color: var(--color-brand-orange);
+  border-radius: 9px;
 }
 
 .home .card h3 {
-  font-size: 1.5rem;
+/*  font-size: 1.5rem; */
+  margin-top: -2.5rem;
   line-height: 2rem;
   padding: 0 0 1rem;
   position: relative;
@@ -141,13 +147,13 @@
 
 .home .card .paragraph {
   font-weight: var(--weight-light);
-  margin-top: 1rem;
-  flex: 1 0 auto; /* NOTE must specify flex-basis for IE 11 */
+  margin-top: 0rem;
+/*  flex: 1 0 auto; /* NOTE must specify flex-basis for IE 11 */ */
 }
 
 .home .card .ulist {
   font-weight: var(--weight-bold);
-  margin: 1.5rem 0 0.5rem;
+/*  margin: 1.5rem 0 0.5rem; */
   /* overflow-wrap: normal; */
   word-wrap: normal; /* NOTE not sure why this is required, but without it, list items get spaced apart */
 }
@@ -242,6 +248,7 @@
 @media screen and (min-width: 1024px) {
   .home .cards-4 .card {
     flex-basis: 0;
+    border-radius: 9px;
   }
 }
 
