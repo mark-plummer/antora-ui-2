@@ -88,10 +88,11 @@ $("a[title]").tooltips();
 <script src="{{uiRootPath}}/js/vendor/docsearch.min.js"></script>
 <!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
 <script>
+function focusSearchInput () { document.querySelector('#search-input').focus() }
 var search = docsearch({
-  {{#with env.ALGOLIA_APP_ID}}
-  appId: '{{this}}',
-  {{/with}}
+  {{#if env.ALGOLIA_APP_ID}}
+  appId: '{{env.ALGOLIA_APP_ID}}',
+  {{/if}}
   apiKey: '{{env.ALGOLIA_API_KEY}}',
   indexName: '{{env.ALGOLIA_IDX_NAME}}',
   inputSelector: '#search-input',
@@ -99,15 +100,7 @@ var search = docsearch({
   algoliaOptions: { hitsPerPage: 10 }
 }).autocomplete
 search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
+focusSearchInput()
+window.addEventListener('load', focusSearchInput)
 </script>
-{{#if page.home}}
-<script>
-window.addEventListener('load', function focusSearchInput () {
-  window.removeEventListener('load', focusSearchInput)
-  document.querySelector('#search-input').focus()
-})
-</script>
-{{/if}}
 {{/if}}
