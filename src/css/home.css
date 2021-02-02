@@ -1,3 +1,16 @@
+.body .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.home {
+  background-color: white;
+  flex: 1;
+  min-height: 100vh;
+}
+
 .home p {
   margin: 0;
 }
@@ -126,8 +139,8 @@
 
 .home .card h3 {
   /*  font-size: 1.5rem; */
-  margin-top: -2.5rem;
-  line-height: 2rem;
+  top: -0.7%;
+  /*  line-height: 2rem; */
   padding: 0 0 1rem;
   position: relative;
 }
@@ -490,4 +503,25 @@ mark {
   font-size: 1.3rem;
   font-weight: var(--weight-light);
   border: 0;
+}
+
+/* .home .content {
+  display: grid;
+  grid-template-rows: 1fr auto;
+} */
+
+.home .footer {
+  background-color: var(--footer-background);
+  color: var(--footer-font-color);
+  font-size: calc(15 / var(--rem-base) * 1rem);
+  line-height: var(--footer-line-height);
+  padding: 1.5rem;
+}
+
+.home .footer p {
+  margin: 0.5rem 0;
+}
+
+.home .footer a {
+  color: var(--footer-link-font-color);
 }
