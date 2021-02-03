@@ -1,9 +1,11 @@
 sources:
   - path: antora-ui-default
   - path: '@djencks/tabset-block-ui'
+  - path: '@djencks/algolia-ui'
   - path: ./
 css:
   - site.css
+  - vendor/docsearch.css
 js:
   - target: site
     contents: '+([0-9])-*.js'
