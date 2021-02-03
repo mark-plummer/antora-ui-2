@@ -13,11 +13,16 @@
   "browserslist": [
     "last 2 versions"
   ],
+  "scripts": {
+    "clean-install": "rm -rf node_modules .cache package-lock.json;npm run plain-install",
+    "plain-install": "npm i --cache=.cache/npm --no-optional",
+    "build": "gulp"
+  },
   "devDependencies": {
     "@djencks/antora-ui-builder": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-antora-ui-builder-v0.0.6.tgz",
     "@djencks/tabset-block-ui": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-tabset-block-ui-v0.0.3.tgz",
+    "@djencks/algolia-ui": "https://gitlab.com/djencks/algolia-ui.git",
     "antora-ui-default": "git+https://gitlab.com/antora/antora-ui-default.git",
-    "@djencks/algolia-ui": "file:///Users/mark.plummer/repos/algolia-ui",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
