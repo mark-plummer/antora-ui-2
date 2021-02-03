@@ -37,8 +37,6 @@ js:
   - target: vendor/popper
     require: popper.js/dist/popper.min.js
     processor: none
-#    vfs.src(require.resolve('docsearch.js/dist/cdn/docsearch.min.js'), opts).pipe(concat('js/vendor/docsearch.min.js')),
-#  - target: vendor/docsearch
-#    require: docsearch.js/dist/cdn/docsearch.min.js
+
 bundle-name: ui2
 preview: true
