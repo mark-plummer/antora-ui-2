@@ -37,5 +37,8 @@
     "gulp-uglify": "~3.0",
     "tippy.js": "^6.2.7",
     "websocket-extensions": "^0.1.4"
+  },
+  "dependencies": {
+    "stylelint": "^13.9.0"
   }
 }
