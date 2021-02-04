@@ -19,7 +19,7 @@
 @import "header-cb.css";
 @import "footer.css";
 /* @import "footer-cb.css"; */
-/* @import "highlight.css"; */
+@import "highlight.css";
 @import "print.css";
 @import "bootstrap-badges.css";
 @import "bootstrap-navtabs.css";

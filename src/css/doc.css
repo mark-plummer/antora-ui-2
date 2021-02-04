@@ -615,8 +615,8 @@ h1.page + aside.toc.embedded {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*  background: transparent; */
-  background: url(../img/octicons-16.svg#symbol-clippy-16) no-repeat 50% 50%;
+  background: transparent;
+  /* background: url(../img/octicons-16.svg#symbol-clippy-16) no-repeat 50% 50%; */
   border: none;
   color: inherit;
   outline: none;
