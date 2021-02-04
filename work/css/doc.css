@@ -615,7 +615,7 @@ h1.page + aside.toc.embedded {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: transparent; */
+  /*  background: transparent; */
   background: url(../img/octicons-16.svg#symbol-clippy-16) no-repeat 50% 50%;
   border: none;
   color: inherit;
@@ -627,17 +627,22 @@ h1.page + aside.toc.embedded {
   height: 1em;
 }
 
-.source-toolbox .copy-button * {
+.doc .source-toolbox .copy-icon {
   flex: none;
-}
-
-.source-toolbox .copy-button svg {
-  fill: currentColor;
   width: inherit;
   height: inherit;
 }
 
-.source-toolbox .copy-toast {
+.doc .source-toolbox img.copy-icon {
+  filter: invert(50.2%);
+}
+
+.doc .source-toolbox svg.copy-icon {
+  fill: currentColor;
+}
+
+.doc .source-toolbox .copy-toast {
+  flex: none;
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -651,7 +656,7 @@ h1.page + aside.toc.embedded {
   transition: opacity 0.5s ease 0.75s;
 }
 
-.source-toolbox .copy-toast::after {
+.doc .source-toolbox .copy-toast::after {
   content: "";
   position: absolute;
   top: 0;
@@ -663,7 +668,7 @@ h1.page + aside.toc.embedded {
   transform-origin: left;
 }
 
-.source-toolbox .copy-button.clicked .copy-toast {
+.doc .source-toolbox .copy-button.clicked .copy-toast {
   opacity: 1;
   transition: none;
 }
