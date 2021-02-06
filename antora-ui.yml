@@ -1,5 +1,6 @@
 sources:
   - path: antora-ui-default
+  - path: '@djencks/header-footer-shim-ui'
   - path: '@djencks/tabset-block-ui'
   - path: '@djencks/algolia-ui'
   - path: ./
