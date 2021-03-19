@@ -7,8 +7,18 @@
   font-size: initial;
   background: white;
   border: 1px solid gray;
-  border-radius: 9px;
+  /* border-radius: 9px; */
   box-shadow: 7px 7px 5px grey;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  display: none;
+  margin-top: 8px;
+  padding: 4px 0;
+  font-size: 1em;
+  color: #33363d;
 }
 
 .algolia-autocomplete .ds-dropdown-menu::before {
@@ -66,7 +76,7 @@
   }
 
   .algolia-autocomplete .ds-dropdown-menu > :first-child {
-    max-height: calc(var(--viewport-height) - var(--navbar-height));
+    /* max-height: calc(var(--viewport-height) - var(--navbar-height)); */
   }
 }
 

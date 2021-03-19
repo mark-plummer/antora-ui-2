@@ -1,9 +1,15 @@
 footer.footer {
-  background-color: var(--footer-background);
-  color: var(--footer-font-color);
+  background-color: #101233;
+  color: #e5e5e5;
   font-size: calc(15 / var(--rem-base) * 1rem);
   line-height: var(--footer-line-height);
   padding: 1.5rem;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  height: inherit;
 }
 
 .footer p {

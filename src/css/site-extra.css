@@ -47,10 +47,41 @@
   padding: 0 0.25em;
 }
 
+#search .query {
+  border: 1px solid var(--navbar-button-border-color);
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  padding: 0.25rem;
+  margin-bottom: 13px;
+  border-radius: 4px;
+  /* width: 7ex; /* width required to make input flexible */
+  height: -webkit-fit-content; /* fix for Safari */
+  flex: auto;
+}
+
 @media screen and (min-width: 769px) {
   #search-input {
     width: 200px;
   }
+}
+
+#search {
+  display: flex;
+  position: relative; /* make results relative to whole search field, not just input */
+  color: var(--body-font-color);
+  width: 97.5%;
+}
+
+#search > .algolia-autocomplete {
+  display: inherit !important;
+  position: static !important;
+  flex: auto;
+}
+
+#search .query:focus {
+  outline: none;
 }
 
 .doc .image.conum > img {

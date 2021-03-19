@@ -1,7 +1,9 @@
 :root {
   --weight-medium: 500;
   --navbar-background: #4e55fd;
+  --navbar-menu-background: #4e55fd;
   --navbar_hover-background: #4e55fd;
+  --navbar-menu_hover-background: #fff;
   /* cb styles
   /* NOTE tint colors are 15% transparent */
   /* primary */
@@ -61,8 +63,13 @@
   --z-index-navbar: 3;
   --z-index-footer: 2;
   --z-index-nav: 1;
-
+  --navbar-menu_hover-background: var(--color-smoke-50);
   /* dimensions and positioning */
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
+
+  /* container - added from centered default ui */
+  --width-container: 80rem;
+  --width-container-gutter: 1.25rem;
+  --width-nav: 16rem;
 }

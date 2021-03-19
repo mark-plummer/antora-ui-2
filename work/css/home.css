@@ -32,7 +32,7 @@
 }
 
 .home h1.page {
-  font-size: 2.375rem;
+  font-size: 1.8rem;
   margin-top: 3.5rem;
   text-align: center;
 }
@@ -137,9 +137,11 @@
   border-radius: 9px;
 }
 
+/* changes height of persona titles */
+
 .home .card h3 {
   /*  font-size: 1.5rem; */
-  top: -0.7%;
+  top: -3%;
   /*  line-height: 2rem; */
   padding: 0 0 1rem;
   position: relative;
@@ -154,6 +156,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  margin-bottom: 5px;
   border: 1px solid currentColor;
   width: 25%;
 }
@@ -165,7 +168,7 @@
 }
 
 .home .card .ulist {
-  font-weight: var(--weight-bold);
+  font-weight: 500;
   /*  margin: 1.5rem 0 0.5rem; */
   /* overflow-wrap: normal; */
   word-wrap: normal; /* NOTE not sure why this is required, but without it, list items get spaced apart */
@@ -176,11 +179,13 @@
   color: inherit;
 }
 
+/*
 .home .card a::after {
   content: "\00a0>";
   width: 0;
   display: inline-block;
 }
+*/
 
 .home .tiles {
   font-size: 1.125rem;

@@ -26,6 +26,7 @@
 
 .nav-container.is-active {
   visibility: visible;
+  margin-left: 30px;
 }
 
 .nav {
@@ -46,7 +47,8 @@
     top: var(--navbar-height);
     box-shadow: none;
     position: sticky;
-    height: var(--nav-height--desktop);
+    height: 100vh;
+    /* height: var(--nav-height--desktop); */ /* old setting */
   }
 }
 
@@ -62,15 +64,7 @@ html.is-clipped--nav {
 
 .nav-panel-menu {
   overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
-  height: var(--nav-panel-height);
-}
-
-@media screen and (min-width: 1024px) {
-  .nav-panel-menu {
-    height: var(--nav-panel-height--desktop);
-  }
+  height: var(--nav-panel-menu-height);
 }
 
 .nav-panel-menu:not(.is-active) .nav-menu {
@@ -88,33 +82,15 @@ html.is-clipped--nav {
   left: 0;
 }
 
-.nav-panel-menu,
-.nav-panel-explore .components {
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb-color) transparent;
-}
-
-.nav-panel-menu::-webkit-scrollbar,
-.nav-panel-explore .components::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-.nav-panel-menu::-webkit-scrollbar-thumb,
-.nav-panel-explore .components::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb-color);
-}
-
 .nav-menu {
-  flex-grow: 1;
-  min-height: 0;
-  width: 100%;
+  min-height: 100%;
   padding: 0.5rem 0.75rem;
   line-height: var(--nav-line-height);
   position: relative;
 }
 
 .nav-menu h3.title {
-  color: var(--nav-heading-font-color);
+  color: var(--thoughtspot-blue);
   font-size: inherit;
   font-weight: var(--body-font-weight-bold);
   margin: 0;
@@ -123,6 +99,7 @@ html.is-clipped--nav {
 
 .nav-menu a {
   color: inherit;
+  text-decoration: none;
 }
 
 .nav-list {
@@ -130,8 +107,8 @@ html.is-clipped--nav {
   padding: 0;
 }
 
-.nav-menu > .nav-list {
-  margin-bottom: 0.5rem;
+.nav-menu > .nav-list + .nav-list {
+  margin-top: 0.5rem;
 }
 
 .nav-item {
@@ -173,6 +150,12 @@ html.is-clipped--nav {
 .is-current-page > .nav-link,
 .is-current-page > .nav-text {
   font-weight: var(--body-font-weight-bold);
+  color: #7177fd;
+}
+
+.nav-menu a.nav-link:focus,
+.nav-menu a.nav-link:hover {
+  color: #7177fd;
 }
 
 .nav-panel-explore {
@@ -180,26 +163,42 @@ html.is-clipped--nav {
   display: flex;
   flex-direction: column;
   position: absolute;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  max-height: calc(50% + var(--drawer-height));
+}
+
+.nav-panel-explore:not(:first-child) {
+  top: auto;
+  max-height: var(--nav-panel-explore-height);
+  display: none;
 }
 
 .nav-panel-explore .context {
+  font-size: calc(15 / var(--rem-base) * 1rem);
   flex-shrink: 0;
-  padding: 0 0.25rem 0 0.5rem;
+  color: var(--nav-muted-color);
+  box-shadow: 0 -1px 0 var(--nav-panel-divider-color);
+  padding: 0 0.5rem;
   display: flex;
-  line-height: 0;
-  height: 0;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  line-height: 1;
+  height: var(--drawer-height);
 }
 
 .nav-panel-explore .context .version {
-  background-image: url(../img/chevron.svg);
-  background-repeat: no-repeat;
-  background-position: right 0.5rem top 50%;
-  background-size: auto 0.75em;
-  padding: 0 1.5rem 0 0;
+  display: flex;
+  align-items: inherit;
+}
+
+.nav-panel-explore .context .version::after {
+  content: "";
+  background: url(../img/chevron.svg) no-repeat center right / auto 100%;
+  width: 1.25em;
+  height: 0.75em;
 }
 
 .nav-panel-explore .components {
@@ -232,6 +231,7 @@ html.is-clipped--nav {
 
 .nav-panel-explore .component .title {
   font-weight: var(--body-font-weight-bold);
+  color: inherit;
 }
 
 .nav-panel-explore .versions {
@@ -263,9 +263,3 @@ html.is-clipped--nav {
   opacity: 0.9;
   font-weight: var(--body-font-weight-bold);
 }
-
-/*
-.nav-panel-explore .component .is-latest a::after {
-  content: " (latest)";
-}
-*/
