@@ -85,11 +85,12 @@ table {
 
 body ::-webkit-scrollbar {
   height: 0.25rem;
-  width: 0.25rem;
+  width: 0.15rem;
 }
 
 body ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb-color);
+  /* background-color: var(--scrollbar-thumb-color); */
+  background-color: #2222;
 }
 /* added from centered default ui */
 .container {

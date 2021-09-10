@@ -84,7 +84,6 @@ tippy('button', {content: 'tooltip'});
 
 $("a[title]").tooltips();
 </script> -->
-<script src="../../_/js/vendor/docsearch.js"></script>
 <!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
 <!-- old search snippet - begin <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
@@ -96,7 +95,7 @@ var search = docsearch({
   inputSelector: '#search-input',
   autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
   algoliaOptions: {
-    facetFilters: ['version:latest', 'version:6.2', 'version:6.1', 'version:6.0']
+    facetFilters: [['version:latest', 'version:6.2', 'version:6.1', 'version:6.0']],
   }
 }).autocomplete
 search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
@@ -104,11 +103,10 @@ focusSearchInput()
 window.addEventListener('load', focusSearchInput)
 </script>-->
 
-<script async id="search-script" src="../../_/js/vendor/docsearch.js" data-app-id="7DXYLT633X" data-api-key="f2070e11a04d7c9e7487102e4a68ea1a" data-index-name="search-manager" data-stylesheet="../../_/css/vendor/docsearch.css"></script>
 <!-- old search snippet - end -->
 <!-- docsearch snippet - begin -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script> -->
-<script>
+ <!-- <script>
   docsearch({
     // Your apiKey and indexName will be given to you once
     // we create your config
@@ -119,11 +117,57 @@ window.addEventListener('load', focusSearchInput)
     // matching your search input
     // Set debug to true to inspect the dropdown
     debug: true,
-    inputSelector: '#search',
+    inputSelector: '#search-input',
     autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
     algoliaOptions: {
       facetFilters: [['version:latest', 'version:6.2', 'version:6.1', 'version:6.0']],
   },
   });
-</script>
+</script> -->
 <!-- docsearch snippet - end -->
+
+<!--- new fixed docsearch snippet - begin
+
+<script>
+function focusSearchInput () { document.querySelector('#search-input').focus() }
+var search = docsearch({
+  appId: '7DXYLT633X',
+  apiKey: 'f2070e11a04d7c9e7487102e4a68ea1a',
+  indexName: 'search-manager',
+  inputSelector: '#search-input',
+  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
+  algoliaOptions: {
+    facetFilters: [['version:latest', 'version:6.2', 'version:6.1', 'version:6.0']],
+  }
+}).autocomplete
+search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
+focusSearchInput()
+window.addEventListener('load', focusSearchInput)
+</script>
+
+<script async id="search-script" src="../../_/js/vendor/docsearch.js" data-app-id="7DXYLT633X" data-api-key="f2070e11a04d7c9e7487102e4a68ea1a" data-index-name="search-manager" data-stylesheet="../../_/css/vendor/docsearch.css"></script>
+
+new fixed docsearch snippet - end -->
+
+<!-- yet another attempt - begin
+
+<script>
+function focusSearchInput () { document.querySelector('#search-input').focus() }
+var search = docsearch({
+  appId: '7DXYLT633X',
+  apiKey: 'eb713b359b0ea12251c4c8627758d26d',
+  indexName: 'search-manager',
+  inputSelector: '#search-input',
+  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
+  algoliaOptions: {
+    facetFilters: [['version:latest', 'version:6.2', 'version:6.1', 'version:6.0']],
+  }
+}).autocomplete
+search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
+focusSearchInput()
+window.addEventListener('load', focusSearchInput)
+</script>
+-->
+<script async id="search-script" src="{{{uiRootPath}}}/js/vendor/docsearch.js" data-app-id="H9VO30NJUR" data-api-key="4f9f6cb45d52c5de838598520d75d103" data-index-name="search-manager" data-stylesheet="{{{uiRootPath}}}/css/vendor/docsearch.css"></script>
+
+<!-- yet another attempt - end -->

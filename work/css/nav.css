@@ -16,7 +16,8 @@
 
 @media screen and (min-width: 1024px) {
   .nav-container {
-    font-size: calc(15.5 / var(--rem-base) * 1rem);
+    /* font-size: calc(15.5 / var(--rem-base) * 1rem); */
+    font-size: 0.8rem;
     flex: none;
     position: static;
     top: 0;
@@ -48,6 +49,7 @@
     box-shadow: none;
     position: sticky;
     height: 100vh;
+    -webkit-box-shadow: 1px -1px 0 0 #e1e1e1;
     /* height: var(--nav-height--desktop); */ /* old setting */
   }
 }
@@ -204,8 +206,8 @@ html.is-clipped--nav {
 .nav-panel-explore .components {
   line-height: var(--doc-line-height);
   flex-grow: 1;
-  box-shadow: inset 0 1px 5px var(--nav-panel-divider-color);
-  background: var(--nav-secondary-background);
+  /* box-shadow: inset 0 1px 5px var(--nav-panel-divider-color); */
+  background: #fafafa;
   padding: 0.5rem 0.75rem 0 0.75rem;
   margin: 0;
   overflow-y: scroll;
@@ -231,7 +233,7 @@ html.is-clipped--nav {
 
 .nav-panel-explore .component .title {
   font-weight: var(--body-font-weight-bold);
-  color: inherit;
+  color: #4e55fd;
 }
 
 .nav-panel-explore .versions {
@@ -262,4 +264,108 @@ html.is-clipped--nav {
   border-color: currentColor;
   opacity: 0.9;
   font-weight: var(--body-font-weight-bold);
+}
+
+.nav .badge-dep {
+  display: inline-block;
+  background-color: #ff595a;
+  color: #fff;
+  font-size: 9px;
+  margin-left: 1px;
+  margin-top: -1.1px;
+  position: relative;
+  top: 2px;
+  border-radius: 9px;
+  font-weight: 800;
+  vertical-align: top;
+  padding-top: 4px;
+  /*   display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ebebeb;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #373BB1;
+  border-radius: 5px;
+  position: relative;
+  top: -1px; */
+}
+
+/* media queries for nav caret */
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .nav-item-toggle {
+    background: transparent url(../img/caret.svg) no-repeat center / 30%;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    position: absolute;
+    height: calc(var(--nav-line-height) * 1em);
+    width: calc(var(--nav-line-height) * 1em);
+    margin-top: -0.05em;
+    margin-left: calc(var(--nav-line-height) * -1em);
+  }
+}
+/* mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .nav-item-toggle {
+    background: transparent url(../img/caret.svg) no-repeat center / 30%;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    position: absolute;
+    height: calc(var(--nav-line-height) * 1em);
+    width: calc(var(--nav-line-height) * 1em);
+    margin-top: -0.05em;
+    margin-left: calc(var(--nav-line-height) * -1em);
+  }
+}
+/* iphone 6/7/8 */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .nav-item-toggle {
+    background: transparent url(../img/caret.svg) no-repeat center / 30%;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    position: absolute;
+    height: calc(var(--nav-line-height) * 1em);
+    width: calc(var(--nav-line-height) * 1em);
+    margin-top: -0.05em;
+    margin-left: calc(var(--nav-line-height) * -1em);
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  .nav-item-toggle {
+    background: transparent url(../img/caret.svg) no-repeat center / 30%;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    position: absolute;
+    height: calc(var(--nav-line-height) * 1em);
+    width: calc(var(--nav-line-height) * 1em);
+    margin-top: -0.05em;
+    margin-left: calc(var(--nav-line-height) * -1em);
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For iPad landscape layouts only */
+  .nav-item-toggle {
+    background: transparent url(../img/caret.svg) no-repeat center / 30%;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    position: absolute;
+    height: calc(var(--nav-line-height) * 1em);
+    width: calc(var(--nav-line-height) * 1em);
+    margin-top: -0.05em;
+    margin-left: calc(var(--nav-line-height) * -1em);
+  }
 }
