@@ -47,6 +47,14 @@
   text-align: left;
 }
 
+.doc-home #preamble {
+  margin: 2rem 0 3rem;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  /* text-align: center; */
+  text-align: left;
+}
+
 .home .button::before {
   content: "[";
   padding-right: 0.25em;
@@ -693,7 +701,7 @@ mark {
   background-color: #000;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   .columns {
     display: flex;
     /* justify-content: space-between; */
@@ -701,7 +709,7 @@ mark {
   }
 
   .columns .box {
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
   }
 
   .columns .box:first-child {
@@ -714,7 +722,7 @@ mark {
 
   /* 2nd column box dimensions - start */
   .columns .box2 {
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
   }
 
   .columns .box2:first-child {
@@ -1012,7 +1020,7 @@ mark {
 
 /* 2nd column home box styles - end */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1216px) {
   .columns {
     display: flex;
     /* justify-content: center; */
@@ -1032,7 +1040,7 @@ mark {
   }
 
   .columns .box:first-child {
-    margin-left: 150px;
+    margin-left: 0;
   }
 
   .columns .box2:first-child {
@@ -1061,6 +1069,65 @@ mark {
 
   .columns > a {
     width: calc(25% - 20px);
+  }
+
+  .columns > a:first-child {
+    margin-left: 0;
+  }
+
+  .columns > a:last-child {
+    margin-right: 0;
+  }
+}
+/*
+@media only screen and (min-width: 800px) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .columns .box {
+    width: calc(50% - 20px);
+  }
+
+  .columns .box2 {
+    width: calc(50% - 20px);
+  }
+
+  .columns .box-home {
+    width: calc(25% - 20px);
+  }
+
+  .columns .box:first-child {
+    margin-left: 0;
+  }
+
+  .columns .box2:first-child {
+    margin-left: 0;
+  }
+
+  .columns .box-home:first-child {
+    margin-left: 0;
+  }
+
+  .main-home .columns .box:first-child {
+    margin-left: 0;
+  }
+
+  .columns .box:last-child {
+    margin-right: 0;
+  }
+
+  .columns .box2:last-child {
+    margin-right: 0;
+  }
+
+  .columns .box-home:last-child {
+    margin-right: 0;
+  }
+
+  .columns > a {
+    width: calc(50% - 20px);
   }
 
   .columns > a:first-child {

@@ -16,8 +16,8 @@
       <script async src="https://www.googletagmanager.com/gtm.js?id={{site.keys.googleAnalytics}}"></script>
     {{/if}}
     <script>var uiRootPath = '{{{uiRootPath}}}'</script>
-    <script src="/node_modules/vanilla-modal/dist/index.js"></script>
-        <script>
+    <script src="{{uiRootPath}}/js/vendor/index.js"></script>
+<!--        <script>
         (function (global, factory) {
       if (typeof define === "function" && define.amd) {
         define(['exports'], factory);
@@ -423,7 +423,7 @@
 
       exports.default = VanillaModal;
     });
-    </script>
+  </script> -->
         <script>var vanillaModal = new VanillaModal.default()</script>
         <script>const modal = new VanillaModal(options);</script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

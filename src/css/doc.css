@@ -17,12 +17,12 @@
   max-width: 92%;
   padding: 0 1rem 4rem;
 }
-
+/*
 @media only screen and (min-width: 800px)
   .doc-home .columns .box: first-child {
   margin-left: 0;
 }
-
+*/
 .label {
   display: inline;
   padding: 0.2em 0.6em 0.3em;
@@ -49,7 +49,7 @@
 
 .label-new {
   background-color: #00aeef;
-  color: #0e1e24;
+  color: #f0f8ff;
   margin-left: 1px;
   position: relative;
   top: 0;
@@ -687,12 +687,12 @@ li::marker {
   color: #fff !important;
   background-color: #000;
 }
-
+/*
 @media only screen and (min-width: 800px) {
   .columns {
     display: flex;
     /* justify-content: center; */
-    flex-wrap: wrap;
+/*    flex-wrap: wrap;
   }
 
   .columns .box {
@@ -719,7 +719,8 @@ li::marker {
     margin-right: 0;
   }
 }
-
+*/
+/*
 @media only screen and (max-width: 800px) {
   .columns .box {
     margin-bottom: 25px;
@@ -727,7 +728,7 @@ li::marker {
     display: block;
   }
 }
-
+*/
 /* comm columns -end */
 
 .doc .admonitionblock {
