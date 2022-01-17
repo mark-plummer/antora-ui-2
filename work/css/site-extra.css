@@ -1,0 +1,95 @@
+.navbar-brand .navbar-item + .navbar-item {
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.algolia-autocomplete .ds-dropdown-menu [class^="ds-dataset-"] {
+  max-height: calc(100vh - 3.25rem);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand .navbar-item + .navbar-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .algolia-autocomplete .ds-dropdown-menu {
+    min-width: calc(100vw - 2.75rem) !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-brand {
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+  }
+
+  .navbar-menu {
+    -ms-flex-positive: 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+  }
+}
+
+#search-input {
+  color: #333;
+  font-family: inherit;
+  font-size: 0.95rem;
+  width: 150px;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.1em;
+  line-height: 1.5;
+  padding: 0 0.25em;
+}
+
+#search .query {
+  border: 1px solid var(--navbar-button-border-color);
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  padding: 0.25rem;
+  margin-bottom: 13px;
+  border-radius: 4px;
+  /* width: 7ex; /* width required to make input flexible */
+  height: -webkit-fit-content; /* fix for Safari */
+  flex: auto;
+  background: #fff url(https://d33wubrfki0l68.cloudfront.net/18fc58b185ba9ad7f7131fa6810a67e7fd8e78a7/03f57/_/img/search.svg);
+  background-size: 1rem;
+  background-position: right 0.8rem center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 769px) {
+  #search-input {
+    width: 200px;
+  }
+}
+
+#search {
+  display: flex;
+  position: relative; /* make results relative to whole search field, not just input */
+  color: var(--body-font-color);
+  width: 97.5%;
+}
+
+#search > .algolia-autocomplete {
+  display: inherit !important;
+  position: static !important;
+  flex: auto;
+}
+
+#search .query:focus {
+  outline: none;
+}
+
+.doc .image.conum > img {
+  height: 0.9em;
+  width: auto;
+  vertical-align: -0.1em;
+}
