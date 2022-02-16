@@ -39,6 +39,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "dependencies": {
+    "particles.js": "^2.0.0",
     "stylelint": "^13.9.0"
   }
 }

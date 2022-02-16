@@ -15,6 +15,15 @@
       <script>(window.dataLayer=window.dataLayer||[]).push({'gtm.start':+new Date(),event:'gtm.js'})</script>
       <script async src="https://www.googletagmanager.com/gtm.js?id={{site.keys.googleAnalytics}}"></script>
     {{/if}}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44946579-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-44946579-2');
+    </script>
     <script>var uiRootPath = '{{{uiRootPath}}}'</script>
     <script src="https://thoughtspot.github.io/js/index.js"></script>
       <!--  <script>var vanillaModal = new VanillaModal.default()</script> -->
@@ -22,97 +31,4 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-              <script>
-                /********* Version 11.x JavaScript for Site Search 360 *********/
-              var ss360Config = {
-                /********* General *********/
-                  siteId: "cloud-docs.thoughtspot.com",
-                  showErrors: false,
-                  layout: {
-                      navigation: {
-                          position: "top"
-                      },
-                      mobile: {
-                          showUrl: true,
-                          showImages: true
-                      },
-                      desktop: {
-                          showUrl: true,
-                          showImages: true
-                      }
-                  },
-                  /********* Search Suggestions *********/
-                  suggestions: {
-                      show: false,
-                      maxQuerySuggestions: 3,
-                      showImages: false,
-                      num: 6,
-                      minChars: 3,
-                      highlight: true
-                  },
-                  style: {
-                      themeColor: "#4E55FD",
-                      suggestions: {
-                          text: {
-                              color: "#5c5c5c"
-                          },
-                          background: {
-                              color: "#ffffff"
-                          },
-                          padding: "1px",
-                          distanceFromTop: "0px",
-                          border: {
-                              color: "#4E55FD",
-                              radius: "0px"
-                          }
-                   },
-                      /********* Search Box *********/
-                      searchBox: {
-                          text: {
-                              color: "#6c6c6c",
-                              size: "14px"
-                          },
-                          background: {
-                              color: "#ffffff"
-                          },
-                          padding: "6px",
-                          icon: {
-                              image: "magnifier"
-                          },
-                          border: {
-                              color: "#98a0b0",
-                              radius: "0px"
-                          },
-                          button: {
-                              text: "Search..."
-                          }
-                      },
-                      loaderType: "circle",
-                      animationSpeed: 250
-                  },
-                  searchBox: {
-                      placeholder: "Search...",
-                      selector: "#searchBox"
-                  },
-                  results: {
-                      embedConfig: {
-                          contentBlock: "searchresults-only",
-                          url: "https://docs.thoughtspot.com/search.html"
-                      },
-                      caption: "Found #COUNT# results for your query \"#QUERY#\"",
-                      group: true,
-                      num: 300,
-                      highlightQueryTerms: true,
-                      moreResultsButton: "More results",
-                      noResultsText: "Sorry, we have not found any matches for your query.",
-                      queryCorrectionText: "Did you mean \"#CORRECTION#\"?",
-                      moreResultsPagingSize: 50
-                  },
-                  contentGroups: {
-                      otherName: "Search results",
-                      ignoreOther: true,
-                      exclude: ['4.4','4.5','5.0','5.1','5.2','5.3','6.0','6.1','6.2']
-                  }
-              }
-              </script>
-              <script src="https://sitesearch360.com/cdn/sitesearch360-v11.min.js"></script>
+              <script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script>

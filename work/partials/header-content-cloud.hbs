@@ -8,7 +8,7 @@
   <nav class="navbar">
     <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://docs-thoughtspot-com.netlify.app/software/latest/"><img src="{{uiRootPath}}/img/ts-docs-blue.svg" alt="ThoughtSpot logo" height="50"/></a>
+      <a class="navbar-item" href="https://docs.thoughtspot.com/cloud/latest/"><img src="{{uiRootPath}}/img/ts-docs-blue.svg" alt="ThoughtSpot logo" height="50"/></a>
     <!-- <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">{{site.title}}</a> -->
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
@@ -23,8 +23,12 @@
               {{#if (and page.component (ne page.component.name 'home'))}}
             <!--  <div id="search" class="field has-filter">
                 <input class="query" type="text" placeholder="Search the docs"> -->
-                <div id="searchBox" class="field has-filter">
-                <input id="searchBox" type="text" placeholder="Search the docs">
+                <!-- 2nd search box try - begin -->
+                <section role="search" data-ss360="true">
+   <input type="search" id="searchBox" placeholder="Search the docs…">
+  <!-- <button id="searchButton"></button> -->
+</section>
+<!-- 2nd search box try - end -->
             <!--    <label class="filter checkbox">
                   <input type="checkbox" data-facet-filter="component:{{page.component.name}}"> In this project
                 </label> -->
@@ -33,9 +37,12 @@
               <!-- <div id="search" class="field">
                 <input class="query" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
               </div> -->
-              <div id="searchBox" class="field">
-                <input id="searchBox" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
-              </div>
+              <!-- 2nd search box try - begin -->
+              <section role="search" data-ss360="true">
+              <input type="search" id="searchBox" placeholder="Search…">
+              <!-- <button id="searchButton"></button> -->
+              </section>
+              <!-- 2nd search box try - end -->
               {{/if}}
             </div>
         <!-- search box end -->
@@ -43,7 +50,7 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Cloud</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://docs-test-thoughtspot.netlify.app/software/latest/">Software</a>
+            <a class="navbar-item" href="https://docs.thoughtspot.com/software/latest/">Software</a>
             <a class="navbar-item" href="https://developers.thoughtspot.com/docs/">ThoughtSpot <br/>Everywhere</a>
             <a class="navbar-item" href="https://doc.seekwell.io/">Seekwell</a>
 <!--            <a class="navbar-item" href="#">Product B</a>

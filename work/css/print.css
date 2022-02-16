@@ -83,4 +83,9 @@
   .footer * {
     color: inherit;
   }
+
+  * {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
 }

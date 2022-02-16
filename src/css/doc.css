@@ -17,6 +17,25 @@
   max-width: 92%;
   padding: 0 1rem 4rem;
 }
+
+/* landing page box button styles - start */
+
+.columns .box-button {
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 28px 45px rgba(0, 0, 0, 0.2);
+  margin: 0 6px 30px;
+  position: relative;
+  padding: 20px 20px 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+
+.box-button:hover { background-color: #f3a22f; }
+.box-button:active { transform: translateY(4px); }
+
+/* landing page box button styles - start */
+
 /*
 @media only screen and (min-width: 800px)
   .doc-home .columns .box: first-child {
@@ -129,7 +148,7 @@
   background-color: #00aeef;
   color: #f0f8ff;
   font-size: 9px;
-  margin-left: 1px;
+  margin-left: 0.5px;
   position: relative;
   top: 0;
   border-radius: 5px;
@@ -274,6 +293,7 @@
   font-size: 28px;
   font-weight: 600;
   margin-left: 10px;
+  text-align: left;
 }
 
 /* changed for optimo typeface - end */
@@ -288,6 +308,7 @@
   .doc-home > h1.page:first-child {
     margin-top: 2.5rem;
     margin-left: 10px;
+    text-align: left;
   }
 }
 
@@ -1621,6 +1642,19 @@ td {
   background-color: #000;
   border-radius: 0.25rem;
 }
+
+/* ts edition comparison guide css - start */
+
+.scrollable-wide {
+  overflow-x: auto;
+}
+
+.scrollable-long {
+  overflow-y: auto;
+  height: 576px;
+}
+
+/* ts edition comparison guide css - end */
 
 /* END: Privileges table in security-matrix.md */
 
