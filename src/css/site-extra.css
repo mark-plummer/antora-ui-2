@@ -265,3 +265,31 @@
 }
 
 /* ss360 css - end */
+
+.algolia_search_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 700px!important;
+  z-index: 15;
+}
+
+.search_wrapper {
+  display: flex;
+  justify-content: flex-end!important;
+}
+
+.ais-SearchBox-input {
+  width: 500px!important;
+  height: 40px!important;
+}
+
+.algolia_search_wrapper .search_wrapper .ais-SearchBox-submit {
+  font-size: 18px!important;
+  top: 3px!important;
+  right: 5px!important;
+}
+
+.algolia_search_wrapper .search_wrapper form:before {
+  top: 10px!important;
+}
