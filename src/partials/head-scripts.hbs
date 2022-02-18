@@ -17,19 +17,67 @@
     {{/if}}
     <script>var uiRootPath = '{{{uiRootPath}}}'</script>
     <script src="https://thoughtspot.github.io/js/index.js"></script>
-    <script src="https://thoughtspotnext.ngrok.io/scripts/algolia/dist/algolia_search.bundled.js"></script>
+    <!--<script src="https://thoughtspotnext.ngrok.io/scripts/algolia/dist/algolia_search.bundled.js"></script>-->
+    <script src="https://thoughtspot-git-algolia-thoughtspot-site.vercel.app/scripts/algolia/dist/algolia_search.bundled.js"></script>
+    
     <script>
       let initialized = false;
-      function initializeAlgolia() {
+      async function initializeAlgolia() {
         if (initialized) return;
 
         const searchElement = document.querySelector('#algolia-search');
 
-        console.log(searchElement)
+        const pathParams = window.location.pathname.split('/').filter(Boolean)
+        
+        let deployment = ['software', 'cloud'].indexOf(pathParams[0]) > -1 ? pathParams[0] : null
+        let version = pathParams[1] ? pathParams[1] : null
 
+        let filters = {docs: {}}
+
+        if (deployment) {
+          filters.docs.deployment = deployment
+        }
+
+        if (version) {
+          filters.docs.version = version
+        }
+
+        console.log('filters', filters)
+
+        // FULL SCREEN
+        const fullScreenSearchWrapper = document.createElement('div')
+        const fullScreenSearchContainer = document.createElement('div')
+        fullScreenSearchWrapper.classList.add('full_screen_search_wrapper')
+        fullScreenSearchWrapper.style.display = 'none'
+        fullScreenSearchContainer.classList.add('full_screen_search')
+        fullScreenSearchContainer.classList.add('algolia_search_wrapper')
+        document.body.appendChild(fullScreenSearchWrapper)
+        fullScreenSearchWrapper.appendChild(fullScreenSearchContainer)
+
+        const fullScreenAlgoliaSearch = await new window.AlgoliaSearch(fullScreenSearchContainer, {
+          inline: false,
+          onCloseButton: () => {
+            fullScreenSearchWrapper.style.display = 'none'
+          }
+        });
+
+        // INLINE
         initialized = true;
-        const algoliaSearch = new window.AlgoliaSearch(searchElement, {inline: true});
-        console.log('initialized', algoliaSearch);
+        const algoliaSearch = new window.AlgoliaSearch(searchElement, {
+          inline: true,
+          filters: filters,
+          viewMoreFunction: (section, searchValue) => {
+            fullScreenSearchWrapper.style.display = 'block';
+            fullScreenAlgoliaSearch.setQuery(searchValue)
+            fullScreenAlgoliaSearch.viewMoreFilter(section)
+
+            // Key is refinement list class name. Value is value of element to click
+            fullScreenAlgoliaSearch.selectFilters({
+              deployment: _.get(filters, 'docs.deployment'),
+              docs_version: _.get(filters, 'docs.version')
+            })
+          }
+        });        
       }
       window.addEventListener('load', () => {
         if (window.AlgoliaSearch) {
