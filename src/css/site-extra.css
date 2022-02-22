@@ -293,6 +293,11 @@
   top: 10px!important;
 }
 
+.algolia_search_wrapper.inline .hits_parent_container {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
 @media screen and (max-width: 1023px) {
   .navbar-menu {
     padding: 0!important;
