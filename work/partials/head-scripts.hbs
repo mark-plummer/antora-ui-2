@@ -24,9 +24,11 @@
       let initialized = false;
       async function initializeAlgolia() {
         if (initialized) return;
+        initialized = true;
 
         const searchElement = document.querySelector('#algolia-search');
-        searchElement.classList.add('algolia_docs');
+        document.body.classList.add('algolia_docs')
+        searchElement.classList.add('algolia_docs')
 
         const pathParams = window.location.pathname.split('/').filter(Boolean)
         
@@ -43,8 +45,6 @@
           filters.docs.version = version
         }
 
-        console.log('filters', filters)
-
         // FULL SCREEN
         const fullScreenSearchWrapper = document.createElement('div')
         const fullScreenSearchContainer = document.createElement('div')
@@ -55,24 +55,27 @@
         document.body.appendChild(fullScreenSearchWrapper)
         fullScreenSearchWrapper.appendChild(fullScreenSearchContainer)
 
-        const fullScreenAlgoliaSearch = await new window.AlgoliaSearch(fullScreenSearchContainer, {
+        const fullScreenAlgoliaSearch = await new window.AlgoliaSearchComponent(fullScreenSearchContainer, {
           inline: false,
           firstResults: 'docs',
           onCloseButton: () => {
             fullScreenSearchWrapper.style.display = 'none'
+            document.body.classList.remove('full_screen_search_open')
           }
         });
 
         // INLINE
-        initialized = true;
-        const algoliaSearch = new window.AlgoliaSearch(searchElement, {
+        const algoliaSearch = await new window.AlgoliaSearchComponent(searchElement, {
           inline: true,
           filters: filters,
+          addClass: 'header_algolia_search',
           firstResults: 'docs',
-          viewMoreFunction: (section, searchValue) => {
+          viewMoreFunction: (section, searchValue, instance) => {
             fullScreenSearchWrapper.style.display = 'block';
             fullScreenAlgoliaSearch.setQuery(searchValue)
             fullScreenAlgoliaSearch.viewMoreFilter(section)
+            document.body.classList.add('full_screen_search_open')
+            instance.api.closeSearchResults()
 
             // Key is refinement list class name. Value is value of element to click
             fullScreenAlgoliaSearch.selectFilters({
@@ -80,10 +83,38 @@
               docs_version: _.get(filters, 'docs.version')
             })
           }
-        });        
+        });
+
+        // BODY
+        if (window.location.pathname == '/home/latest/') {
+          const bodySearchWrapper = document.createElement('div')
+          bodySearchWrapper.classList.add('algolia_search_wrapper')
+
+          document.querySelector('#preamble').prepend(bodySearchWrapper)
+          
+          const bodyAlgoliaSearch = await new window.AlgoliaSearchComponent(bodySearchWrapper, {
+            inline: true,
+            filters: filters,
+            firstResults: 'docs',
+            viewMoreFunction: (section, searchValue, instance) => {
+              fullScreenSearchWrapper.style.display = 'block';
+              fullScreenAlgoliaSearch.setQuery(searchValue)
+              fullScreenAlgoliaSearch.viewMoreFilter(section)
+              document.body.classList.add('full_screen_search_open')
+              instance.api.closeSearchResults()
+
+              // Key is refinement list class name. Value is value of element to click
+              fullScreenAlgoliaSearch.selectFilters({
+                deployment: _.get(filters, 'docs.deployment'),
+                docs_version: _.get(filters, 'docs.version')
+              })
+            }
+          });
+        }
+     
       }
       window.addEventListener('load', () => {
-        if (window.AlgoliaSearch) {
+        if (window.AlgoliaSearchComponent) {
           initializeAlgolia();
         } else {
           window.addEventListener('algoliaReady', initializeAlgolia);
