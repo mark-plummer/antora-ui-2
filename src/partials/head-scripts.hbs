@@ -113,13 +113,21 @@
         }
      
       }
-      window.addEventListener('load', () => {
+
+      function awaitAlgolia() {
         if (window.AlgoliaSearchComponent) {
           initializeAlgolia();
         } else {
           window.addEventListener('algoliaReady', initializeAlgolia);
         }
-      })
+      }
+
+      if (document.readyState === 'complete') {
+        awaitAlgolia()
+      } else {
+          document.addEventListener("DOMContentLoaded", awaitAlgolia);
+      }
+
     </script>
       <!--  <script>var vanillaModal = new VanillaModal.default()</script> -->
       <!--  <script>const modal = new VanillaModal(options);</script> -->
