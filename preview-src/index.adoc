@@ -18,6 +18,8 @@ Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
 +++<H4><span class="badge badge-primary">New</span></H4>+++
 
+xref:snippet.adoc[example snippet]
+
 +++
 <button data-tippy-content="Me first!">Default</button>
 <button data-tippy-content="hello, my name is inigo montoya. You killed my father. Prepare to die.">I have my own content</button>

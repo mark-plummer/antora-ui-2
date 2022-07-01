@@ -7,7 +7,7 @@
     {{/with}}
     {{#if env.OPTANON_SCRIPT_URL}}
 <!--      jquery is also loaded in the footer, don't load it twice.-->
-      <!-- <script src="{{uiRootPath}}/js/vendor/jquery.js"></script> -->
+      <script src="{{uiRootPath}}/js/vendor/jquery.js"></script>
       <script src="{{env.OPTANON_SCRIPT_URL}}"></script>
       <script>function OptanonWrapper(){}</script>
     {{/if}}
@@ -16,5 +16,13 @@
       <script async src="https://www.googletagmanager.com/gtm.js?id={{site.keys.googleAnalytics}}"></script>
     {{/if}}
     <script>var uiRootPath = '{{{uiRootPath}}}'</script>
-              {{!-- <script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script> --}}
     <script src="https://thoughtspot.github.io/js/index.js"></script>
+    <!--<script src="https://thoughtspotnext.ngrok.io/scripts/algolia/dist/algolia_search.bundled.js"></script>-->
+    <script src="https://scripts.thoughtspot.com/algolia_search.bundled.js"></script>
+
+      <!--  <script>var vanillaModal = new VanillaModal.default()</script> -->
+      <!--  <script>const modal = new VanillaModal(options);</script> -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              <script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script>

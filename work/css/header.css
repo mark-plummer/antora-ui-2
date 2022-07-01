@@ -6,6 +6,11 @@ body {
   padding-top: var(--navbar-height);
 }
 
+body.snippet {
+  padding-top: 0.5rem;
+  margin-top: -5px;
+}
+
 .navbar {
   /* background: var(--thoughtspot-blue); */
   background: linear-gradient(89deg, rgba(68, 68, 68, 1) 0%, rgba(78, 85, 253, 1) 15%, rgba(78, 85, 253, 1) 50%, rgba(71, 74, 130, 1) 85%, rgba(68, 68, 68, 1) 100%);
