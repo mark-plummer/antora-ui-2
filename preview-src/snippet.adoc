@@ -8,6 +8,37 @@ NOTE: Features designated as [.badge-snippet.badge-update-snippet]#Beta# are off
 
 [#primary-8.3.0.cl]
 
+++++
+<div class="accordion-container">
+  <div class="ac">
+    <h2 class="ac-header">
+      <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+    </h2>
+    <div class="ac-panel">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="ac">
+    <h2 class="ac-header">
+      <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+    </h2>
+    <div class="ac-panel">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="ac">
+    <h2 class="ac-header">
+      <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+    </h2>
+    <div class="ac-panel">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</div>
+++++
+
 [#8-3-0-cl-kpi]
 *KPI chart enhancements*
 
@@ -114,7 +145,7 @@ Databricks connections now support OAuth authentication. [.show-hide]#See xref:c
 You now have more granular user and folder-level controls for encrypting your persistent data, with advanced data encryption at rest (EAR).
 
 [#8-3-0-cl-spotapps]
-*Jira Issue Management SpotApp [.badge-snippet.badge-update-snippet]#Beta#*
+*Jira Issue Management SpotApp [.badge-snippet.badge-update-snippet]  #Beta#*
 
 With the new Jira Issue Management Spot App, you can analyze your issue tracking data. It maps your Jira data to SpotApp columns, and creates customizable worksheets, answers, and Liveboards, based on your data.
 

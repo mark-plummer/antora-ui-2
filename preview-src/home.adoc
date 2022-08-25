@@ -1,41 +1,12 @@
-= Hardware and Software Requirements
+= Home
 Author Name
 :idprefix:
 :idseparator: -
 :!example-caption:
 :!table-caption:
-
-image:multirepo-ssg.svg[Multirepo SSG,200,float=right]
-Platonem complectitur mediocritatem ea eos.
-Ei nonumy deseruisse ius.
-Mel id omnes verear.
-Vis no velit audiam, sonet <<dependencies,praesent>> eum ne.
-*Prompta eripuit* nec ad.
-Integer diam enim, dignissim eget eros et, ultricies mattis odio.
-Vestibulum consectetur nec urna a luctus.
-Quisque pharetra tristique arcu fringilla dapibus.
-Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
-
-[cols="20%,20%,20%,40%",frame=ends,grid=rows]
-|===
-|Original contract term |Rollover within contract term |Renewal contract term |Rollover at time of renewal
-
-|1 year
-|N/A
-|1 year or multi-year
-|Up to 30% of prior contract’s flexible credits as long as renewal amount >= original contract.
-
-|Multi-year
-|100%
-|Multi-year
-|Up to 15% of prior contract’s flexible credits as long as renewal amount >= original contract.
-|===
-
-+++<H4><span class="badge badge-primary">New</span></H4>+++
+:page-layout: home-branch
 
 xref:snippet.adoc[example snippet]
-
-xref:home.adoc[home!]
 
 +++
 <button data-tippy-content="Me first!">Default</button>
@@ -60,6 +31,23 @@ xref:home.adoc[home!]
   <span class="tooltiptext">You're hovering! Great job! Go here for complete details</span>
 </div>
 +++
+
+.table
+[cols="20%,20%,20%,40%",frame=ends,grid=rows]
+|===
+|Original contract term |Rollover within contract term |Renewal contract term |Rollover at time of renewal
+
+|1 year
+|N/A
+|1 year or multi-year
+|Up to 30% of prior contract’s flexible credits as long as renewal amount >= original contract.
+
+|Multi-year
+|100%
+|Multi-year
+|Up to 15% of prior contract’s flexible credits as long as renewal amount >= original contract.
+|===
+
 
 [.conceal-title]
 == {empty}

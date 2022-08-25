@@ -50,7 +50,8 @@ body.snippet {
   align-self: center;
   padding: 0;
   color: var(--navbar-font-color);
-  font-size: calc(22 / var(--rem-base) * 1rem);
+  font-size: 1rem;
+  /* font-size: calc(22 / var(--rem-base) * 1rem); */
   flex-grow: 100; /* added to keep search box aligned right */
 }
 

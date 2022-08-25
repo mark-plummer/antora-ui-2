@@ -995,7 +995,7 @@ label {
 @media screen and (min-width: 1216px) {
   .home #preamble {
     text-align: center;
-    /* margin-left: 13px; */
+    margin-left: 0px;
   }
 
   .home h1.page {

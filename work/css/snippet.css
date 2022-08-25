@@ -25,6 +25,7 @@ dt,
 strong,
 th {
   font-weight: 500;
+  font-size: 14px;
 }
 
 body {
@@ -110,15 +111,34 @@ body {
 }
 
 .label-dep {
-  background-color: #fff;
-  border: 1px solid #909090;
+  background-color: transparent;
+  /* border: 1px solid #909090; */
+  font-weight: 700;
   color: #909090;
   margin-left: 1px;
   position: relative;
   top: 0;
+  font-size: 13px;
   vertical-align: middle;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.label-dep-whats-new {
+  background-color: #909090;
+  /* border: 1px solid #909090; */
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  margin-left: 1px;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  border-radius: 20px;
 }
 
 .badge-snippet {
@@ -163,6 +183,23 @@ body {
   border-radius: 5px;
   position: relative;
   top: -1px; */
+}
+
+.badge-update-whats-new {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 1px;
+  position: relative;
+  /* font-weight: 800; */
+  /* vertical-align: top; */
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: -1px;
+  border-radius: 20px;
+  background-color: #56d3a8;
 }
 
 .badge-new {
@@ -301,6 +338,7 @@ body {
 .doc-snippet h6 {
   color: #444;
   font-weight: 500;
+  font-size: 16px;
   font-family: var(--body-font-family);
   hyphens: none;
   line-height: 1.3;
@@ -315,6 +353,7 @@ body {
 .doc-home h6 {
   color: #444;
   font-weight: 500;
+  /* font-size: 16px; */
   font-family: var(--body-font-family);
   hyphens: none;
   line-height: 1.3;
@@ -327,6 +366,12 @@ body {
   margin: 1.5rem 0;
   font-size: 28px;
   font-weight: 600;
+}
+
+.month-year-whats-new {
+  font-weight: 500;
+  margin-left: 1px;
+  font-size: 16px;
 }
 
 /* changed for optimo typeface - end */
@@ -374,7 +419,7 @@ h1.page + aside.toc.embedded {
 }
 
 .doc-snippet h2:not(.discrete) {
-  border-bottom: 1px solid var(--section-divider-color);
+  /* border-bottom: 1px solid var(--section-divider-color); */
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
@@ -421,6 +466,7 @@ h1.page + aside.toc.embedded {
 .doc-snippet p,
 .doc-snippet dl {
   margin: 0;
+  font-size: 14px;
 }
 
 .doc-snippet a {
@@ -820,13 +866,14 @@ li::marker {
 }
 
 .doc-snippet .admonitionblock td.icon i::before {
-  background: no-repeat 0/cover;
+  background: no-repeat;
   content: "";
-  margin-top: -18px; /* for new all-in-one admonition */
-  margin-left: 7px; /* for new all-in-one admonition */
+  margin-top: -10px; /* for new all-in-one admonition */
+  margin-left: 10px; /* for new all-in-one admonition */
+  margin-right: -3px;
   display: block;
-  height: 1.875rem;
-  width: 1.875rem;
+  height: 18px;
+  width: 18px;
 }
 
 .doc-snippet .admonitionblock td.content {
@@ -834,11 +881,11 @@ li::marker {
   /* border-right: 1px solid var(--color-brand-silver); */ /* new all-in-one admonition */
   /* border-top: 1px solid var(--color-brand-silver); */ /* new all-in-one admonition */
   flex: 1;
-  font-size: 0.7575rem;
+  font-size: 14px;
   hyphens: auto;
   line-height: 1.6;
   min-width: 0;
-  padding-top: 0.86rem;
+  padding-top: 0.9rem;
   padding-right: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 0.3rem;
@@ -858,6 +905,7 @@ li::marker {
 
 .doc-snippet .admonitionblock td.content::before {
   font-weight: var(--weight-medium);
+  content: "" !important;
 }
 
 .doc-snippet .admonitionblock.caution > table {
@@ -919,25 +967,28 @@ li::marker {
 }
 
 .doc-snippet .admonitionblock.note > table {
-  background-color: transparent;
-  border: 2px solid rgba(0, 174, 255, 0.2); /* for new all-in-one note */
-  border-left: 6px solid #00aeef; /* for new all-in-one note */
-  border-radius: 5px; /* for new all-in-one note */
-  border-bottom: 2px solid rgba(0, 174, 2319, 0.2);
-  border-top: 2px solid rgba(0, 174, 2319, 0.2);
-  border-right: 2px solid rgba(0, 174, 2319, 0.2);
+  background-color: #dee8fa;
+  /* border: 2px solid rgba(0, 174, 255, 0.2); /* for new all-in-one note */
+  /* border-left: 6px solid #00aeef; /* for new all-in-one note */
+  border: 0 !important;
+  border-radius: 8px; /* for new all-in-one note */
+  /* border-bottom: 2px solid rgba(0, 174, 2319, 0.2); */
+  /* border-top: 2px solid rgba(0, 174, 2319, 0.2); */
+  /* border-right: 2px solid rgba(0, 174, 2319, 0.2); */
+  border-left: 0;
+  height: 52px;
   /* box-shadow: 0.1px 1px 5px 1px #ccc; */
 }
 
 .doc-snippet .admonitionblock.note td.icon i::before {
-  background-image: url(../img/info2.svg);
+  background-image: url(../img/Alert_Icon.svg);
   vertical-align: middle;
   padding-left: 25px; /* for new all-in-one note */
 }
 
 .doc-snippet .admonitionblock.note td.content::before {
-  content: "Note: ";
-  color: #00aeef;
+  /* content: "Note: "; */
+  /* color: #00aeef; */
 }
 
 .doc-snippet .admonitionblock.note td.content {
