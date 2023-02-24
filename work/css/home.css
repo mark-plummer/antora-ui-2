@@ -11,6 +11,13 @@
   max-width: var(--width-container);
   padding: 0 var(--width-container-gutter);
   width: 100%;
+<<<<<<< HEAD
+}
+
+.home .ulist li {
+  margin-bottom: 0.5rem;
+=======
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 }
 
 .home {
@@ -80,6 +87,13 @@
   padding-left: 0.25em;
 }
 
+.home .card img {
+  width: 40px;
+  position: relative;
+  top: -65px;
+  margin-left: -10px;
+}
+
 .home .card ul,
 .home .tile ul {
   line-height: 1.25;
@@ -91,6 +105,11 @@
 .home .card li,
 .home .tile li {
   padding: 0.25em 0;
+}
+
+.home .card li li {
+  padding: 0.5em 0;
+  padding-left: 20px;
 }
 
 .home .card a,
@@ -145,23 +164,39 @@
 }
 
 .home .card:nth-of-type(1) {
-  background-color: var(--color-brand-pink);
+  /* background-color: var(--color-brand-pink); */
   border-radius: 9px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
+  background-image: url("../../_/img/important.svg");
+}
+
+.home .card:nth-of-type(1) img {
+  width: 40px;
+  position: relative;
+  top: -65px;
+  margin-left: -10px;
 }
 
 .home .card:nth-of-type(2) {
-  background-color: var(--color-brand-green);
+  /* background-color: var(--color-brand-green); */
   border-radius: 9px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
 
 .home .card:nth-of-type(3) {
-  background-color: var(--color-brand-light-blue);
+  /* background-color: var(--color-brand-light-blue); */
   border-radius: 9px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
 
 .home .card:nth-of-type(4) {
-  background-color: var(--color-brand-orange);
+  /* background-color: var(--color-brand-orange); */
   border-radius: 9px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
 
 /* changes height of persona titles */
@@ -995,7 +1030,11 @@ label {
 @media screen and (min-width: 1216px) {
   .home #preamble {
     text-align: center;
-    /* margin-left: 13px; */
+<<<<<<< HEAD
+    margin-left: 0;
+=======
+    margin-left: 0px;
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
   }
 
   .home h1.page {
@@ -1378,7 +1417,12 @@ label {
   }
 
   .box-button-columns .box-button:first-child {
+<<<<<<< HEAD
+    /* margin-left: 0; */
+    margin-left: 20px;
+=======
     margin-left: 0;
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
   }
 
   .box-button-columns .box-button:last-child {

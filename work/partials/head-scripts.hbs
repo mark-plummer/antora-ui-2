@@ -1,20 +1,23 @@
 {{#if (eq env.FORCE_HTTPS 'true')}}
   <script>(function(l,p){if(l.protocol!==p)l.protocol=p})(location,'https:')</script>
 {{/if}}
-{{#with site.keys.googleAnalytics}}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{this}}"></script>
+<!-- {{#with site.keys.googleAnalytics}}
     <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','{{this}}')</script>
     {{/with}}
-    {{#if env.OPTANON_SCRIPT_URL}}
+    {{#if env.OPTANON_SCRIPT_URL}} -->
 <!--      jquery is also loaded in the footer, don't load it twice.-->
       <!-- <script src="{{uiRootPath}}/js/vendor/jquery.js"></script> -->
       <script src="{{env.OPTANON_SCRIPT_URL}}"></script>
       <script>function OptanonWrapper(){}</script>
     {{/if}}
-    {{#if site.keys.googleAnalytics}}
+    <!-- {{#if site.keys.googleAnalytics}}
       <script>(window.dataLayer=window.dataLayer||[]).push({'gtm.start':+new Date(),event:'gtm.js'})</script>
       <script async src="https://www.googletagmanager.com/gtm.js?id={{site.keys.googleAnalytics}}"></script>
+<<<<<<< HEAD
+    {{/if}} -->
+=======
     {{/if}}
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
     <script>var uiRootPath = '{{{uiRootPath}}}'</script>
     <script src="https://unpkg.com/accordion-js@3.3.1/dist/accordion.min.js"></script>
     <script src="https://thoughtspot.github.io/js/index.js"></script>

@@ -239,7 +239,14 @@
   --footer-font-color: var(--color-gray-15);
   --footer-link-font-color: var(--color-white);
   /* dimensions and positioning */
+<<<<<<< HEAD
+  /* orig for main docs
+--navbar-height: calc(63 / var(--rem-base) * 1rem); */
+  /* toolbar adjustment for online help */
+  --navbar-height: calc(42 / var(--rem-base) * 1rem);
+=======
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
