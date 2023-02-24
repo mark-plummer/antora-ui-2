@@ -302,6 +302,7 @@ Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna.
 Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae!
 ____
 
+<<<<<<< HEAD
 [.cards.cards-4.personas.conceal-title]
 == {empty}
 
@@ -327,6 +328,8 @@ image::multirepo-ssg.svg[]
 [.card]
 === IT and Operations
 
+=======
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 == Fin
 
 That's all, folks!

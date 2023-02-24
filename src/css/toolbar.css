@@ -8,8 +8,12 @@
   height: var(--toolbar-height);
   justify-content: flex-start;
   position: sticky;
+<<<<<<< HEAD
   /* top: var(--navbar-height); */
   top: 3.5rem;
+=======
+  top: var(--navbar-height);
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
   z-index: var(--z-index-toolbar);
 }
 

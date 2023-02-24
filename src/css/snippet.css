@@ -25,8 +25,12 @@ dt,
 strong,
 th {
   font-weight: 500;
+<<<<<<< HEAD
   /* font-size: 14px; */
   font-size: 0.84444rem;
+=======
+  font-size: 14px;
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 }
 
 body {
@@ -122,7 +126,11 @@ body {
   font-size: 13px;
   vertical-align: middle;
   padding-top: 5px;
+<<<<<<< HEAD
   /* padding-bottom: 6px; */
+=======
+  padding-bottom: 5px;
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 }
 
 .label-dep-whats-new {
@@ -142,6 +150,7 @@ body {
   border-radius: 20px;
 }
 
+<<<<<<< HEAD
 .badge-beta {
   display: inline-block;
   color: #fff;
@@ -272,6 +281,8 @@ a.badge.badge-early-access {
   font-style: normal;
 }
 
+=======
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 .badge-snippet {
   display: inline-block;
   min-width: 10px;
@@ -316,14 +327,22 @@ a.badge.badge-early-access {
   top: -1px; */
 }
 
+<<<<<<< HEAD
 /* .badge-update-whats-new {
+=======
+.badge-update-whats-new {
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
   display: inline-block;
   color: #fff;
   font-size: 12px;
   margin-left: 1px;
   position: relative;
   /* font-weight: 800; */
+<<<<<<< HEAD
 /* vertical-align: top;
+=======
+  /* vertical-align: top; */
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
   padding-bottom: 4px;
   padding-top: 4px;
   padding-left: 10px;
@@ -331,6 +350,7 @@ a.badge.badge-early-access {
   top: -1px;
   border-radius: 20px;
   background-color: #56d3a8;
+<<<<<<< HEAD
 } */
 
 .badge-update-note {
@@ -433,6 +453,8 @@ a.badge.badge-early-access {
   top: -1px;
   border-radius: 6px;
   background-color: #a5acb9;
+=======
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 }
 
 .badge-new {
@@ -593,6 +615,7 @@ a.badge.badge-early-access {
   margin: 1rem 0 0;
 }
 
+<<<<<<< HEAD
 .doc-home h1 .anchor,
 .doc-home h2 .anchor,
 .doc-home h3 .anchor,
@@ -627,6 +650,8 @@ a.badge.badge-early-access {
   visibility: visible;
 }
 
+=======
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 /* changed for optimo typeface - start */
 .doc-snippet > h1.page:first-child {
   /* font-size: calc(36 / var(--rem-base) * 1rem); */
@@ -664,7 +689,11 @@ a.badge.badge-early-access {
 @media screen and (min-width: 769px) {
   .doc-home > h1.page:first-child {
     margin-top: 2.5rem;
+<<<<<<< HEAD
     margin-left: 0;
+=======
+    margin-left: 0px;
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
     text-align: left;
   }
 }

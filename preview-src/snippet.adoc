@@ -2,6 +2,7 @@
 = {empty}
 :page-layout: snippet
 
+<<<<<<< HEAD
 ++++
 <style>
 .tableBorder {
@@ -24,6 +25,11 @@
 [label label-dep]#8.3.0.cl# May 2022
 
 NOTE: Features designated as [.badge.badge-update-whats-new-beta-note]#Beta# are off by default. To enable them, contact {support-url}.
+=======
+[label label-dep]#8.3.0.cl# May 2022
+
+NOTE: Features designated as [.badge-snippet.badge-update-snippet]#Beta# are off by default. To enable them, contact {support-url}.
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 
 [#primary-8.3.0.cl]
 
@@ -57,6 +63,7 @@ NOTE: Features designated as [.badge.badge-update-whats-new-beta-note]#Beta# are
   </div>
 </div>
 ++++
+<<<<<<< HEAD
 [.accordion-container.ac]
 [.ac-header.ac-trigger]#best of the west#
 [.ac-panel.ac-text]#Lorem ipsum dolor sit amet, consectetur adipiscing elit.#
@@ -148,6 +155,8 @@ NOTE: Features designated as [.badge.badge-update-whats-new-beta-note]#Beta# are
   </tbody>
 </table>
 ++++
+=======
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 
 [#8-3-0-cl-kpi]
 *KPI chart enhancements*
@@ -182,7 +191,11 @@ Select the *Monitor* tab to view and manage all KPI alerts you create or subscri
 image:monitor-alert.png[]
 
 [#8-3-0-cl-liveboard-v2]
+<<<<<<< HEAD
 *New Liveboard experience [.badge.badge-update-whats-new-beta]#Beta# *
+=======
+*New Liveboard experience [.badge-snippet.badge-update-snippet]#Beta#*
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 
 The new Liveboard experience contains new features and enhancements, including Edit mode, HTML in Liveboard titles and descriptions, and improved filtering.
 
@@ -220,7 +233,11 @@ image::search-data-new-tab.gif[Navigate to new tab to search data]
 *_Other features and enhancements_*
 
 [#8-3-0-cl-dbt]
+<<<<<<< HEAD
 *Integration with dbt [.badge.badge-update-whats-new-beta]#Beta# *
+=======
+*Integration with dbt [.badge-snippet.badge-update-snippet]#Beta#*
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 
 With the new dbt integration, you provide your existing dbt models and ThoughtSpot automatically creates worksheets you can use to query your data.
 
@@ -255,8 +272,12 @@ Databricks connections now support OAuth authentication. [.show-hide]#See xref:c
 You now have more granular user and folder-level controls for encrypting your persistent data, with advanced data encryption at rest (EAR).
 
 [#8-3-0-cl-spotapps]
+<<<<<<< HEAD
 [discrete]
 === Jira Issue Management SpotApp [.badge.badge-update-whats-new-beta]#Beta#
+=======
+*Jira Issue Management SpotApp [.badge-snippet.badge-update-snippet]  #Beta#*
+>>>>>>> 43471d68e4280156f43fab0325233a0d9633e7fa
 
 With the new Jira Issue Management Spot App, you can analyze your issue tracking data. It maps your Jira data to SpotApp columns, and creates customizable worksheets, answers, and Liveboards, based on your data.
 
