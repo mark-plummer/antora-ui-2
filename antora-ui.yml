@@ -6,6 +6,7 @@ sources:
 css:
   - site.css
   - vendor/docsearch.css
+  - vendor/snippet.css
 js:
   - target: site
     contents: '+([0-9])-*.js'

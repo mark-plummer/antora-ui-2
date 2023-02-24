@@ -1,6 +1,6 @@
 /* bootstrap badges - begin */
 
-.badge {
+/* .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
@@ -12,6 +12,7 @@
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+*/
 
 @media (prefers-reduced-motion: reduce) {
   .badge {
@@ -33,7 +34,7 @@ a.badge:focus {
   top: -1px;
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -49,7 +50,7 @@ a.badge:focus {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+} */
 
 button,
 select {
@@ -78,9 +79,9 @@ textarea {
   box-sizing: border-box;
 }
 
-.btn:not(:disabled):not(.disabled) {
+/* .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
-}
+} */
 
 .btn-secondary {
   color: #fff;
