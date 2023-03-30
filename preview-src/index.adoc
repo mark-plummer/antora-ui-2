@@ -13,7 +13,7 @@ Author Name
 }
 </style>
 ++++
-[.badge.badge-deprecated]#Deprecated#
+[.badge.badge-outlined.badge-secondary]#Deprecated#
 
 image:multirepo-ssg.svg[Multirepo SSG,200,float=right]
 Platonem complectitur mediocritatem ea eos.
@@ -46,6 +46,8 @@ Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 xref:snippet.adoc[example snippet]
 
 xref:home.adoc[home!]
+
+<<cu-solet,go to cu solet!>>
 
 +++
 <button data-tippy-content="Me first!">Default</button>
@@ -107,6 +109,12 @@ xref:home.adoc[home!]
 
 ++++
 
+[source,console]
+----
+code block
+----
+
+[#cu-solet]
 == Cu solet
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.

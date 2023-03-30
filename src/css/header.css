@@ -17,7 +17,7 @@ body.snippet {
   color: var(--navbar-font-color);
   font-size: calc(16 / var(--rem-base) * 1rem);
   /* height: var(--navbar-height); */
-  height: 3.5rem
+  height: 3.5rem;
   position: fixed;
   top: 0;
   width: 100%;
